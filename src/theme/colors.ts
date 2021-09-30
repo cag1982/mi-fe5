@@ -1,14 +1,14 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  failure: "#EF9A9A",
+  failure: "#A61B1B",
   // failure: "#CF6679",
-  primary: "#D50000",
-  primaryBright: "#E53935",
-  primaryDark: "#B71C1C",
-  secondary: "#FFAB00",
-  success: "#80CBC4",
-  warning: "#FFB74D",
+  primary: "#243B53",
+  primaryBright: "#334E68",
+  primaryDark: "#102A43",
+  secondary: "#486581",
+  success: "#147D64",
+  warning: "#C99A2E",
 };
 
 export const brandColors = {
@@ -19,7 +19,7 @@ export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
   background: "#121212",
-  backgroundDisabled: "rgba(255, 255, 255, .38)",
+  backgroundDisabled: "#2E2E2E",
   contrast: "rgba(224, 224, 224, .12)",
   invertedContrast: "#FFFFFF",
   input: "rgba(224, 224, 224, .12)",
