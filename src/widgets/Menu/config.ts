@@ -126,7 +126,7 @@ export const socials = [
   {
     label: "Docs",
     icon: "DocsIcon",
-    href: "https://docs.delirium.sandman.finance/",
+    href: "https://docs.despair.sandman.finance/",
   },
   {
     label: "Medium",
