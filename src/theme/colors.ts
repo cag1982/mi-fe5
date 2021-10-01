@@ -3,10 +3,10 @@ import { Colors } from "./types";
 export const baseColors = {
   failure: "#A61B1B",
   // failure: "#CF6679",
-  primary: "#243B53",
-  primaryBright: "#334E68",
-  primaryDark: "#102A43",
-  secondary: "#486581",
+  primary: "#486581",
+  primaryBright: "#627D98",
+  primaryDark: "#334E68",
+  secondary: "#E4C2AB",
   success: "#147D64",
   warning: "#C99A2E",
 };
@@ -39,7 +39,7 @@ export const darkColors: Colors = {
   ...baseColors,
   ...brandColors,
   background: "#121212",
-  backgroundDisabled: "rgba(255, 255, 255, .38)",
+  backgroundDisabled: "#2E2E2E",
   contrast: "rgba(224, 224, 224, .12)",
   invertedContrast: "#FFFFFF",
   input: "rgba(224, 224, 224, .12)",
