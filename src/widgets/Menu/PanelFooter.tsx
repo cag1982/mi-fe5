@@ -59,7 +59,7 @@ const SocialEntry = styled.div`
 `;
 
 const MusicIcon = styled.a`
-  color: rgba(33, 33, 33, .60);
+  color: rgba(255, 255, 255, .6);
 `
 
 const anim = keyframes`
@@ -100,7 +100,7 @@ const MusicIconPlaying = styled.a`
   animation-duration: 5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
-  color: #84D4CE;
+  color: rgba(255, 255, 255, .87);
 `
 
 const AudioPlayer = () => {
