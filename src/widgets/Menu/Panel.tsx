@@ -56,7 +56,7 @@ const StyledRugDoc = styled.a`
 `
 
 const StyledAuditSC = styled.a`
-  padding: 0 16px 8px;
+  padding: 0 32px 8px;
   position: relative;
 
   img {
