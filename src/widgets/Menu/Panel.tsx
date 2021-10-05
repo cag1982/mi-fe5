@@ -55,6 +55,15 @@ const StyledRugDoc = styled.a`
   }
 `
 
+const StyledAuditSC = styled.a`
+  padding: 0 16px 8px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+`
+
 const StyledPaladin = styled.a`
   padding: 0 16px 8px;
   position: relative;
@@ -89,7 +98,7 @@ const StyledDefiYield = styled.a`
 `
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu, rugDocLink, rugDocText, paladinLink, paladinText, defiYieldLink } = props;
+  const { isPushed, showMenu, rugDocLink, rugDocText, auditSCLink, auditSCText, paladinLink, paladinText, defiYieldLink } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
@@ -98,6 +107,12 @@ const Panel: React.FC<Props> = (props) => {
           {rugDocText ? (<span>{rugDocText}</span>) : null}
           <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" />
         </StyledRugDoc>
+      ) : null}
+      {isPushed && auditSCLink ? (
+        <StyledAuditSC href={auditSCLink} target="_blank" rel="noreferrer">
+          {auditSCText ? (<span>{auditSCText}</span>) : null}
+          <img src="/images/audit-sc.png" />
+        </StyledAuditSC>
       ) : null}
       {isPushed && paladinLink ? (
         <StyledPaladin href={paladinLink} target="_blank" rel="noreferrer">

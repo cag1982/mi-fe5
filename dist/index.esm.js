@@ -2619,15 +2619,19 @@ var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeT
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
 var StyledRugDoc = styled.a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  padding: 0 16px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 0;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"], ["\n  padding: 0 16px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: 0;\n    right: 12px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"])));
-var StyledPaladin = styled.a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: -14px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"], ["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: -14px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"])));
-var StyledDefiYield = styled.a(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  padding: 8px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 8px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
+var StyledAuditSC = styled.a(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n"], ["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n"])));
+var StyledPaladin = styled.a(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: -14px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"], ["\n  padding: 0 16px 8px;\n  position: relative;\n\n  img {\n    width: 100%;\n  }\n\n  span {\n    position: absolute;\n    top: -14px;\n    right: 8px;\n    font-size: 10px;\n    padding: 4px 8px;\n    border: 1px solid #84D4CE;\n    border-radius: 6px;\n    color: #84D4CE;\n    background-color: rgba(33, 33, 33, 0.5);\n    font-weight: bold;\n  }\n"])));
+var StyledDefiYield = styled.a(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  padding: 8px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"], ["\n  padding: 8px 8px 0;\n  margin: 0 12px 12px;\n  background-color: rgba(0, 0, 0, 0.25);\n  border-radius: 6px;\n  svg {\n    width: 100%;\n    height: auto;\n  }\n"])));
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, paladinLink = props.paladinLink, paladinText = props.paladinText, defiYieldLink = props.defiYieldLink;
+    var isPushed = props.isPushed, showMenu = props.showMenu, rugDocLink = props.rugDocLink, rugDocText = props.rugDocText, auditSCLink = props.auditSCLink, auditSCText = props.auditSCText, paladinLink = props.paladinLink, paladinText = props.paladinText, defiYieldLink = props.defiYieldLink;
     return (React.createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React.createElement(PanelBody, __assign({}, props)),
         isPushed && rugDocLink ? (React.createElement(StyledRugDoc, { href: rugDocLink, target: "_blank", rel: "noreferrer" },
             rugDocText ? (React.createElement("span", null, rugDocText)) : null,
             React.createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" }))) : null,
+        isPushed && auditSCLink ? (React.createElement(StyledAuditSC, { href: auditSCLink, target: "_blank", rel: "noreferrer" },
+            auditSCText ? (React.createElement("span", null, auditSCText)) : null,
+            React.createElement("img", { src: "/images/audit-sc.png" }))) : null,
         isPushed && paladinLink ? (React.createElement(StyledPaladin, { href: paladinLink, target: "_blank", rel: "noreferrer" },
             paladinText ? (React.createElement("span", null, paladinText)) : null,
             React.createElement("img", { src: "https://paladinsec.co/pld/assets/audited-by-paladin-long.svg", alt: "Paladin Audited" }))) : null,
@@ -2646,7 +2650,7 @@ var Panel = function (props) {
                 React.createElement("path", { d: "M210.215 24.3962C210.215 25.9775 209.918 27.3463 209.323 28.5026C208.744 29.6418 207.971 30.5855 207.002 31.3337C206.049 32.0648 204.97 32.609 203.762 32.966C202.555 33.3061 201.331 33.4762 200.089 33.4762H193.356V15.4182H199.885C201.161 15.4182 202.419 15.5712 203.66 15.8773C204.902 16.1664 206.007 16.6595 206.976 17.3566C207.945 18.0368 208.727 18.955 209.323 20.1112C209.918 21.2675 210.215 22.6958 210.215 24.3962ZM205.675 24.3962C205.675 23.376 205.505 22.5343 205.165 21.8711C204.842 21.191 204.4 20.6554 203.839 20.2643C203.295 19.8562 202.666 19.5671 201.951 19.3971C201.254 19.227 200.532 19.142 199.783 19.142H197.615V29.7013H199.681C200.464 29.7013 201.212 29.6163 201.926 29.4463C202.657 29.2592 203.295 28.9617 203.839 28.5536C204.4 28.1455 204.842 27.6014 205.165 26.9212C205.505 26.2411 205.675 25.3994 205.675 24.3962Z", fill: "#050F19" })))) : null,
         React.createElement(PanelFooter, __assign({}, props))));
 };
-var templateObject_1$D, templateObject_2$d, templateObject_3$8, templateObject_4$3;
+var templateObject_1$D, templateObject_2$d, templateObject_3$8, templateObject_4$3, templateObject_5$2;
 
 var Icon$1l = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
@@ -2904,7 +2908,7 @@ var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplat
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var MobileOnlyOverlay = styled(Overlay)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -2930,7 +2934,7 @@ styled.span(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\
 // `
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, auditLink = _a.auditLink, auditText = _a.auditText, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, auditSCLink = _a.auditSCLink, auditSCText = _a.auditSCText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, auditLink = _a.auditLink, auditText = _a.auditText, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2975,11 +2979,11 @@ var Menu = function (_a) {
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, rugDocText: rugDocText, paladinLink: paladinLink, paladinText: paladinText, defiYieldLink: defiYieldLink }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, rugDocLink: rugDocLink, rugDocText: rugDocText, auditSCLink: auditSCLink, auditSCText: auditSCText, paladinLink: paladinLink, paladinText: paladinText, defiYieldLink: defiYieldLink }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$4, templateObject_5$2, templateObject_6$1;
+var templateObject_1$H, templateObject_2$g, templateObject_3$9, templateObject_4$4, templateObject_5$3, templateObject_6$1;
 
 var ToastAction = function (_a) {
     var action = _a.action;

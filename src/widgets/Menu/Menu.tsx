@@ -106,6 +106,8 @@ const Menu: React.FC<NavProps> = ({
   profile,
   rugDocLink,
   rugDocText,
+  auditSCLink,
+  auditSCText,
   defiYieldLink,
   paladinLink,
   paladinText,
@@ -186,6 +188,8 @@ const Menu: React.FC<NavProps> = ({
           priceLink={priceLink}
           rugDocLink={rugDocLink}
           rugDocText={rugDocText}
+          auditSCLink={auditSCLink}
+          auditSCText={auditSCText}
           paladinLink={paladinLink}
           paladinText={paladinText}
           defiYieldLink={defiYieldLink}

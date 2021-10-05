@@ -55,6 +55,8 @@ export interface PanelProps {
   links: Array<MenuEntry>;
   rugDocLink: string;
   rugDocText: string;
+  auditSCLink: string;
+  auditSCText: string;
   paladinLink: string;
   paladinText: string;
   defiYieldLink: string;
